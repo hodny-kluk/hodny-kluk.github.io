@@ -97,7 +97,7 @@
     <div class="container">
         <div style="text-align: center; margin: 100px 0;">
             <p>Chceš více inspirace a osobních příběhů o překonávání syndromu hodného kluka?</p>
-            <a href="https://www.facebook.com/profile.php?id=61560845061034" target="_blank" style="display: inline-block; padding: 10px 20px; margin: 10px 0; font-size: 18px; color: #fff; background-color: #3b5998; border-radius: 5px; text-decoration: none;">Sleduj mě na Facebooku</a>
+            <a href="https://www.facebook.com/profile.php?id=61560845061034" onclick="return gtag_report_conversion('https://www.facebook.com/profile.php?id=61560845061034');" target="_blank" style="display: inline-block; padding: 10px 20px; margin: 10px 0; font-size: 18px; color: #fff; background-color: #3b5998; border-radius: 5px; text-decoration: none;">Sleduj mě na Facebooku</a>
         </div>
     </div>
 </body>
@@ -109,5 +109,18 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-1015357391');
+
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1015357391/W61lCOWYrrkZEM-_lOQD',
+      'event_callback': callback
+    });
+    return false;
+  }
 </script>
 </html>
