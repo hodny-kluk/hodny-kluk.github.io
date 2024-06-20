@@ -16650,7 +16650,6 @@ html {
   padding: 0;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -16663,9 +16662,6 @@ h6 {
 }
 h1 {
   font-size: 2.25rem;
-}
-h2 {
-  font-size: 1.5rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -19588,7 +19584,6 @@ a.u-button-style.u-border-20 {
   font-family: 'Open Sans',sans-serif;
 }
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -33415,16 +33410,11 @@ a.u-link.u-text-hover-grey-90:hover {
         margin-top: 20px;
         margin-bottom: 20px;
         }
-        h2:not(.u-subtitle)
+        h2
         {
-        font-size: 3rem;
-        line-height: 1.1;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-weight: 300;
-        list-icon-spacing: 0.3;
-        list-icon-size: 0.8;
-        font-family: Oswald,sans-serif;
+        display: inline;
+        font-size: 1.25rem;
+        font-family "Open Sans", sans-serif
         }
         h3
         {
@@ -33542,10 +33532,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         }
         @media (max-width: 575px) {
-        h2:not(.u-subtitle)
-        {
-        font-size: 1.5rem;
-        }
+
         }
         @media (max-width: 575px) {
         h3
